@@ -226,7 +226,7 @@ function App() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative lg:justify-self-end">
               <div className="profile-panel">
                 <div className="profile-visual">
                   <img
