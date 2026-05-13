@@ -228,13 +228,12 @@ function App() {
 
             <div className="relative">
               <div className="profile-panel">
-                <div className="profile-visual" aria-hidden="true">
-                  <div className="profile-initials">MP</div>
-                  <div className="profile-lines">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
+                <div className="profile-visual">
+                  <img
+                    className="profile-photo"
+                    src="/mihretu-petros-photo.jpg"
+                    alt="Portrait of Mihretu Petros"
+                  />
                 </div>
                 <div className="grid gap-4">
                   <Metric icon={BriefcaseBusiness} label="Remote Operations" value="E-commerce VA" />
