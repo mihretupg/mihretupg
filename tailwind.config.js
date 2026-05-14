@@ -20,7 +20,7 @@ export default {
           700: "#0369A1",
         },
         resume: {
-          paper: "#F8FAFC",
+          paper: "#EDE9E6",
           surface: "#FFFFFF",
           line: "#E2E8F0",
           muted: "#94A3B8",
