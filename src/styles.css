@@ -111,10 +111,10 @@ section {
 .profile-visual {
   position: relative;
   display: grid;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1;
   place-items: center;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 999px;
   border: 1px solid rgba(237, 233, 230, 0.18);
   background:
     linear-gradient(145deg, rgba(201, 153, 107, 0.24), rgba(92, 79, 74, 0.88)),
@@ -125,7 +125,7 @@ section {
   display: block;
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -186,10 +186,10 @@ section {
 }
 
 .about-photo-frame {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1;
   max-width: 210px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 999px;
   border: 1px solid rgba(237, 233, 230, 0.18);
   background:
     linear-gradient(145deg, rgba(201, 153, 107, 0.24), rgba(92, 79, 74, 0.66)),
@@ -200,7 +200,7 @@ section {
   display: block;
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
