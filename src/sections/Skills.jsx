@@ -12,20 +12,20 @@ const skillIcons = {
 function Skills() {
   return (
     <Section id="skills" label="Skills" title="A practical toolkit for online business execution.">
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-5 sm:gap-6 md:grid-cols-2">
         {skillGroups.map((group) => {
           const Icon = skillIcons[group.icon];
           return (
-            <article className="section-card hover-card" key={group.title}>
+            <article className="section-card hover-card group" key={group.title}>
               <div className="flex items-center gap-3">
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#5C766D]/10 text-[#5C766D]">
+                <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#5C766D]/10 text-[#5C766D] transition duration-200 group-hover:bg-[#5C766D] group-hover:text-[#EDE9E6]">
                   <Icon size={22} />
                 </span>
-                <h3 className="text-xl font-bold text-navy-900">{group.title}</h3>
+                <h3 className="text-xl font-bold leading-tight text-navy-900">{group.title}</h3>
               </div>
               <div className="mt-6 flex flex-wrap gap-2">
                 {group.items.map((skill) => (
-                  <span className="skill-pill" key={skill}>
+                  <span className="skill-pill transition duration-200 hover:-translate-y-0.5 hover:border-[#5C766D] hover:bg-[#5C766D]/12" key={skill}>
                     {skill}
                   </span>
                 ))}

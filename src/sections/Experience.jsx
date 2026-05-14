@@ -29,7 +29,7 @@ function getBrandLogo(company) {
 function Experience() {
   return (
     <Section id="experience" label="Experience" title="Hands-on virtual assistance for e-commerce and remote teams.">
-      <div className="grid gap-6">
+      <div className="grid gap-5 sm:gap-6">
         {experiences.map((job) => (
           <ExperienceCard job={job} key={`${job.company}-${job.role}`} />
         ))}
@@ -42,12 +42,12 @@ function ExperienceCard({ job }) {
   const logo = getBrandLogo(job.company);
 
   return (
-    <article className="section-card hover-card">
+    <article className="section-card hover-card group">
       <div className="flex flex-col gap-4 border-b border-resume-line pb-6 md:flex-row md:items-start md:justify-between">
         <div className="flex items-start gap-4">
           {logo && (
             <span className="brand-logo-frame">
-              <img className="brand-logo-image" src={logo.src} alt={logo.alt} />
+              <img className="brand-logo-image transition duration-200 group-hover:scale-105" src={logo.src} alt={logo.alt} />
             </span>
           )}
           <div>
@@ -70,7 +70,7 @@ function ExperienceCard({ job }) {
       </div>
       <ul className="mt-6 grid gap-3 md:grid-cols-2">
         {job.points.map((point) => (
-          <li className="flex gap-3 text-sm leading-6 text-resume-strong" key={point}>
+          <li className="flex gap-3 rounded-lg p-2 text-sm leading-6 text-resume-strong transition duration-200 hover:bg-[#5C766D]/8" key={point}>
             <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#5C766D]" />
             <span>{point}</span>
           </li>
