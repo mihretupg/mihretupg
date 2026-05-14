@@ -19,12 +19,9 @@ function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a className="btn-primary" href={`mailto:${personal.email}`}>
               <Mail size={18} />
-              Email
+             Hire Me
             </a>
-            <a className="btn-light" href="/Mihretu-Petros-CV.txt" download>
-              <Download size={18} />
-              Download CV
-            </a>
+            
           </div>
         </div>
 
@@ -34,9 +31,9 @@ function Hero() {
               <img className="profile-photo" src="/mihretu-petros-photo.jpg" alt={`Portrait of ${personal.name}`} />
             </div>
             <div className="grid gap-4">
-              <Metric icon={BriefcaseBusiness} label="E-commerce Support" value="Orders + products" />
-              <Metric icon={ClipboardCheck} label="Inbox Management" value="Clear follow-ups" />
-              <Metric icon={Target} label="Task Coordination" value="Organized delivery" />
+              <Metric icon={BriefcaseBusiness} label="Virtual Assistant" value="Admin support" />
+              <Metric icon={ClipboardCheck} label="Executive Assistant" value="Inbox + scheduling" />
+              <Metric icon={Target} label="Web Development" value="React + Tailwind" />
             </div>
           </div>
         </div>
