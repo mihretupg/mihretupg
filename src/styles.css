@@ -270,21 +270,15 @@ section {
 
 .brand-logo-frame {
   display: grid;
-  width: 58px;
-  min-width: 58px;
-  aspect-ratio: 1;
+  width: 68px;
+  min-width: 68px;
+  min-height: 42px;
   place-items: center;
-  overflow: hidden;
-  border-radius: 8px;
-  border: 1px solid rgba(201, 153, 107, 0.58);
-  background: #ffffff;
-  padding: 8px;
-  box-shadow: 0 12px 24px rgba(92, 79, 74, 0.12);
 }
 
 .brand-logo-image {
   display: block;
-  max-height: 100%;
+  max-height: 42px;
   max-width: 100%;
   object-fit: contain;
 }
