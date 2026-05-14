@@ -10,7 +10,7 @@ function About() {
             <img className="about-photo" src="/mihretu-petros-photo.jpg" alt="Mihretu Petros" />
           </div>
           <div className="mt-6 flex items-center gap-3">
-            <UserRound className="text-accent-300" size={28} />
+            <UserRound className="text-[#5C766D]" size={28} />
             <h3 className="text-2xl font-bold">Remote-ready, organized, and practical.</h3>
           </div>
           <p className="mt-4 leading-7 text-resume-line">

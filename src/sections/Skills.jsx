@@ -18,7 +18,7 @@ function Skills() {
           return (
             <article className="section-card hover-card" key={group.title}>
               <div className="flex items-center gap-3">
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-accent-50 text-accent-700">
+                <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#5C766D]/10 text-[#5C766D]">
                   <Icon size={22} />
                 </span>
                 <h3 className="text-xl font-bold text-navy-900">{group.title}</h3>

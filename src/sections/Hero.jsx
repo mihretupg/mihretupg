@@ -9,7 +9,7 @@ function Hero() {
       <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-resume-paper to-transparent" />
       <div className="relative mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl items-center gap-12 px-5 pb-24 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
         <div className="max-w-3xl">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-lg border border-accent-300/40 bg-resume-paper/10 px-3 py-2 text-sm text-[#EDE9E6]">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-lg border border-[#5C766D]/40 bg-resume-paper/10 px-3 py-2 text-sm text-[#EDE9E6]">
             <MapPin size={16} />
             {personal.location}
           </div>

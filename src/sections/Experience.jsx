@@ -36,7 +36,7 @@ function ExperienceCard({ job }) {
       <ul className="mt-6 grid gap-3 md:grid-cols-2">
         {job.points.map((point) => (
           <li className="flex gap-3 text-sm leading-6 text-resume-strong" key={point}>
-            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent-500" />
+            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#5C766D]" />
             <span>{point}</span>
           </li>
         ))}

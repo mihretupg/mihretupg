@@ -2,7 +2,7 @@ function MiniSection({ id, icon: Icon, label, title, description, meta }) {
   return (
     <article id={id} className="section-card hover-card scroll-mt-24">
       <div className="flex items-start justify-between gap-4">
-        <span className="grid h-12 w-12 place-items-center rounded-lg bg-accent-50 text-accent-700">
+        <span className="grid h-12 w-12 place-items-center rounded-lg bg-[#5C766D]/10 text-[#5C766D]">
           <Icon size={24} />
         </span>
         <span className="rounded-lg bg-resume-soft px-3 py-2 text-sm font-semibold text-navy-900">{meta}</span>

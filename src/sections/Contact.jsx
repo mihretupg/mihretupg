@@ -40,7 +40,7 @@ function Contact() {
                 target={item.label === "Location" ? "_blank" : undefined}
                 rel={item.label === "Location" ? "noreferrer" : undefined}
               >
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-resume-paper/10 text-accent-200">
+                <span className="grid h-11 w-11 place-items-center rounded-lg bg-resume-paper/10 text-[#5C766D]">
                   <Icon size={20} />
                 </span>
                 <span>
