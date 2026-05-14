@@ -4,7 +4,7 @@ import { experiences } from "../data/portfolio";
 
 function Experience() {
   return (
-    <Section id="experience" label="Experience" title="Hands-on support for e-commerce, websites, and remote teams.">
+    <Section id="experience" label="Experience" title="Hands-on virtual assistance for e-commerce and remote teams.">
       <div className="grid gap-6">
         {experiences.map((job) => (
           <ExperienceCard job={job} key={`${job.company}-${job.role}`} />

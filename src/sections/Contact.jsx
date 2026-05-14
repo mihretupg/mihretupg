@@ -10,13 +10,13 @@ const contactIcons = {
 
 function Contact() {
   return (
-    <Section id="contact" label="Contact" title="Available for remote support, web projects, and freelance work.">
+    <Section id="contact" label="Contact" title="Available for virtual assistant roles and remote support.">
       <div className="contact-card">
         <div>
           <h3 className="text-3xl font-bold text-white">Let's work together</h3>
           <p className="mt-4 max-w-xl leading-7 text-white">
-            Reach out for technical virtual assistance, frontend web development, Shopify support, or digital operations
-            help.
+            Reach out for virtual assistance, inbox support, Shopify administration, customer communication, data entry,
+            or remote operations help.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a className="btn-primary" href={`mailto:${personal.email}`}>

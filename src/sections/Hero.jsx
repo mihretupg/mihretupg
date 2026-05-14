@@ -1,4 +1,4 @@
-import { ArrowUpRight, BriefcaseBusiness, Code2, Download, Mail, MapPin, Target } from "lucide-react";
+import { ArrowUpRight, BriefcaseBusiness, ClipboardCheck, Download, Mail, MapPin, Target } from "lucide-react";
 import Metric from "../components/Metric";
 import { githubUrl, personal } from "../data/portfolio";
 
@@ -39,8 +39,8 @@ function Hero() {
             </div>
             <div className="grid gap-4">
               <Metric icon={BriefcaseBusiness} label="Remote Operations" value="E-commerce VA" />
-              <Metric icon={Code2} label="Frontend Stack" value="React + Tailwind" />
-              <Metric icon={Target} label="Client Focus" value="Reliable delivery" />
+              <Metric icon={ClipboardCheck} label="Admin Support" value="Inbox + tasks" />
+              <Metric icon={Target} label="Client Focus" value="Reliable follow-up" />
             </div>
           </div>
         </div>
