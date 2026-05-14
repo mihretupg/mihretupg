@@ -8,7 +8,7 @@ function Header() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#EDE9E6]/20 bg-[#5C4F4A]/95 backdrop-blur">
+    <header className="fixed left-0 right-0 top-0 z-50 bg-[#5C4F4A]/95 backdrop-blur">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#home" className="flex items-center gap-3 text-[#EDE9E6]" onClick={closeMenu}>
           <span className="grid h-10 w-10 place-items-center rounded-lg bg-[#C9996B] font-bold text-[#5C4F4A]">MP</span>
