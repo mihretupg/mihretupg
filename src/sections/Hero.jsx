@@ -34,9 +34,9 @@ function Hero() {
               <img className="profile-photo" src="/mihretu-petros-photo.jpg" alt={`Portrait of ${personal.name}`} />
             </div>
             <div className="grid gap-4">
-              <Metric icon={BriefcaseBusiness} label="Remote Operations" value="E-commerce VA" />
-              <Metric icon={ClipboardCheck} label="Admin Support" value="Inbox + tasks" />
-              <Metric icon={Target} label="Client Focus" value="Reliable follow-up" />
+              <Metric icon={BriefcaseBusiness} label="E-commerce Support" value="Orders + products" />
+              <Metric icon={ClipboardCheck} label="Inbox Management" value="Clear follow-ups" />
+              <Metric icon={Target} label="Task Coordination" value="Organized delivery" />
             </div>
           </div>
         </div>
