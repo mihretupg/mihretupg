@@ -1,6 +1,6 @@
-import { ArrowUpRight, BriefcaseBusiness, ClipboardCheck, Download, Mail, MapPin, Target } from "lucide-react";
+import { BriefcaseBusiness, ClipboardCheck, Download, Mail, MapPin, Target } from "lucide-react";
 import Metric from "../components/Metric";
-import { githubUrl, personal } from "../data/portfolio";
+import { personal } from "../data/portfolio";
 
 function Hero() {
   return (
@@ -20,10 +20,6 @@ function Hero() {
             <a className="btn-primary" href={`mailto:${personal.email}`}>
               <Mail size={18} />
               Email
-            </a>
-            <a className="btn-secondary" href={githubUrl} target="_blank" rel="noreferrer">
-              <ArrowUpRight size={18} />
-              GitHub Portfolio
             </a>
             <a className="btn-light" href="/Mihretu-Petros-CV.txt" download>
               <Download size={18} />

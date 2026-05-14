@@ -1,6 +1,6 @@
-import { ArrowUpRight, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import Section from "../components/Section";
-import { contactLinks, githubUrl, personal } from "../data/portfolio";
+import { contactLinks, personal } from "../data/portfolio";
 
 const contactIcons = {
   mail: Mail,
@@ -22,10 +22,6 @@ function Contact() {
             <a className="btn-primary" href={`mailto:${personal.email}`}>
               <Send size={18} />
               Email Mihretu
-            </a>
-            <a className="btn-secondary" href={githubUrl} target="_blank" rel="noreferrer">
-              <ArrowUpRight size={18} />
-              GitHub Portfolio
             </a>
           </div>
         </div>
