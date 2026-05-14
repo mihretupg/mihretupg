@@ -7,7 +7,7 @@ function MiniSection({ id, icon: Icon, label, title, description, meta }) {
         </span>
         <span className="rounded-lg bg-resume-soft px-3 py-2 text-sm font-semibold text-navy-900">{meta}</span>
       </div>
-      <p className="mt-8 text-sm font-bold uppercase text-accent-600">{label}</p>
+      <p className="mt-8 text-sm font-bold uppercase text-[#5C766D]">{label}</p>
       <h3 className="mt-3 text-2xl font-bold text-navy-900">{title}</h3>
       <p className="mt-4 leading-7 text-resume-body">{description}</p>
     </article>

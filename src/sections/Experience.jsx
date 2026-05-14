@@ -19,7 +19,7 @@ function ExperienceCard({ job }) {
     <article className="section-card hover-card">
       <div className="flex flex-col gap-4 border-b border-resume-line pb-6 md:flex-row md:items-start md:justify-between">
         <div>
-          <p className="text-sm font-semibold uppercase text-accent-600">{job.company}</p>
+          <p className="text-sm font-semibold uppercase text-[#5C766D]">{job.company}</p>
           <h3 className="mt-2 text-2xl font-bold text-navy-900">{job.role}</h3>
           <div className="mt-3 flex flex-wrap gap-3 text-sm text-resume-body">
             <span className="inline-flex items-center gap-2">
