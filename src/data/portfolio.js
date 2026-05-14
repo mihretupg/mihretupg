@@ -5,7 +5,7 @@ export const personal = {
   location: "Addis Ababa, Ethiopia",
   phone: "+251 910 497 908",
   email: "mihretupg@gmail.com",
-  title: "Virtual Assistant | E-commerce Support | Remote Administrative Support",
+  title: "Virtual Assistant | Executive Assistant | Administrative Assistant | E-commerce Support | Web Development",
   summary:
     "Detail-oriented Virtual Assistant with remote experience supporting e-commerce operations, inbox management, customer communication, product listings, data entry, scheduling, digital coordination, and day-to-day administrative workflows. Reliable, organized, and comfortable using Shopify, WordPress, Google Workspace, Microsoft Office, Canva, Slack, Trello, Asana, and Mailchimp.",
 };
