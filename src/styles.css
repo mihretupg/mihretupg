@@ -115,10 +115,15 @@ section {
   place-items: center;
   overflow: hidden;
   border-radius: 999px;
-  border: 1px solid rgba(237, 233, 230, 0.18);
+  border: 4px solid #c9996b;
   background:
     linear-gradient(145deg, rgba(201, 153, 107, 0.24), rgba(92, 79, 74, 0.88)),
     var(--resume-ink);
+  box-shadow:
+    0 0 0 10px rgba(237, 233, 230, 0.08),
+    0 0 0 18px rgba(92, 118, 109, 0.16),
+    0 26px 58px rgba(92, 79, 74, 0.36);
+  isolation: isolate;
 }
 
 .profile-photo {
@@ -127,6 +132,37 @@ section {
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.profile-visual::before,
+.profile-visual::after,
+.about-photo-frame::before,
+.about-photo-frame::after {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  content: "";
+  pointer-events: none;
+}
+
+.profile-visual::before,
+.about-photo-frame::before {
+  inset: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(237, 233, 230, 0.42);
+}
+
+.profile-visual::after,
+.about-photo-frame::after {
+  right: 14%;
+  bottom: 8%;
+  height: 18px;
+  width: 18px;
+  border-radius: 999px;
+  background: #5c766d;
+  box-shadow:
+    0 0 0 6px rgba(237, 233, 230, 0.18),
+    0 0 0 11px rgba(201, 153, 107, 0.24);
 }
 
 .profile-panel > .grid {
@@ -186,14 +222,19 @@ section {
 }
 
 .about-photo-frame {
+  position: relative;
   aspect-ratio: 1;
   max-width: 210px;
   overflow: hidden;
   border-radius: 999px;
-  border: 1px solid rgba(237, 233, 230, 0.18);
+  border: 4px solid #c9996b;
   background:
     linear-gradient(145deg, rgba(201, 153, 107, 0.24), rgba(92, 79, 74, 0.66)),
     rgba(237, 233, 230, 0.08);
+  box-shadow:
+    0 0 0 8px rgba(237, 233, 230, 0.08),
+    0 0 0 14px rgba(92, 118, 109, 0.16),
+    0 18px 42px rgba(92, 79, 74, 0.24);
 }
 
 .about-photo {
