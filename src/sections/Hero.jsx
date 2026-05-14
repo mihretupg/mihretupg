@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, ClipboardCheck, Download, Mail, MapPin, Target } from "lucide-react";
+import { BriefcaseBusiness, ClipboardCheck, Mail, MapPin, Target } from "lucide-react";
 import Metric from "../components/Metric";
 import { personal } from "../data/portfolio";
 
@@ -19,9 +19,8 @@ function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a className="btn-primary" href={`mailto:${personal.email}`}>
               <Mail size={18} />
-             Hire Me
+              Hire Me
             </a>
-            
           </div>
         </div>
 
