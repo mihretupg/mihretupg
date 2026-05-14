@@ -5,7 +5,7 @@ import { personal } from "../data/portfolio";
 function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-[#5C4F4A] pt-28 text-[#EDE9E6] lg:pt-32">
-      <div className="absolute inset-0 hero-grid opacity-35" />
+      <div className="absolute inset-0 hero-grid opacity-55" />
       <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-resume-paper to-transparent" />
       <div className="relative mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl items-center gap-12 px-5 pb-24 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
         <div className="max-w-3xl">

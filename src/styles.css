@@ -34,8 +34,8 @@ section {
 
 .hero-grid {
   background-image:
-    linear-gradient(rgba(237, 233, 230, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(237, 233, 230, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(237, 233, 230, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(237, 233, 230, 0.16) 1px, transparent 1px);
   background-size: 42px 42px;
 }
 
