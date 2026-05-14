@@ -88,6 +88,11 @@ export const skillGroups = [
     ],
   },
   {
+    title: "Website Development",
+    icon: "code",
+    items: ["JavaScript", "React", "Tailwind CSS", "HTML", "CSS", "Responsive Websites", "Website Maintenance"],
+  },
+  {
     title: "Customer & Marketing Support",
     icon: "monitor",
     items: [
@@ -101,7 +106,7 @@ export const skillGroups = [
   },
   {
     title: "Remote Tools",
-    icon: "code",
+    icon: "tools",
     items: [
       "Canva",
       "Google Workspace",
