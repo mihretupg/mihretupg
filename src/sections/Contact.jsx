@@ -9,6 +9,8 @@ const contactIcons = {
 };
 
 function Contact() {
+  const hireHref = `mailto:${personal.email}?subject=Virtual%20Assistant%20Role%20Opportunity`;
+
   return (
     <Section id="contact" label="Contact" title="Available for virtual assistant roles and remote support.">
       <div className="contact-card">
@@ -19,9 +21,9 @@ function Contact() {
             or remote operations help.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a className="btn-primary" href={`mailto:${personal.email}`}>
+            <a className="btn-primary" href={hireHref}>
               <Send size={18} />
-              Email Mihretu
+              Hire Me
             </a>
           </div>
         </div>
