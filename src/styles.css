@@ -227,6 +227,80 @@ section {
   font-weight: 700;
 }
 
+.project-preview {
+  display: grid;
+  min-height: 190px;
+  border-bottom: 1px solid rgba(201, 153, 107, 0.42);
+  background: #5c4f4a;
+  color: #ede9e6;
+}
+
+.project-browser-bar {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  height: 34px;
+  padding: 0 14px;
+  background: rgba(237, 233, 230, 0.1);
+}
+
+.project-browser-bar span {
+  height: 8px;
+  width: 8px;
+  border-radius: 999px;
+  background: #c9996b;
+}
+
+.project-preview-body {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 18px;
+  padding: 18px;
+}
+
+.project-preview-sidebar,
+.project-preview-content,
+.project-preview-grid span {
+  border: 1px solid rgba(237, 233, 230, 0.18);
+  border-radius: 8px;
+  background: rgba(237, 233, 230, 0.1);
+}
+
+.project-preview-content {
+  padding: 16px;
+}
+
+.project-preview-line {
+  height: 10px;
+  width: 70%;
+  border-radius: 999px;
+  background: rgba(237, 233, 230, 0.42);
+}
+
+.project-preview-line-strong {
+  width: 48%;
+  height: 16px;
+  margin-bottom: 12px;
+  background: #c9996b;
+}
+
+.project-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.project-preview-grid span {
+  aspect-ratio: 1.2;
+}
+
+.project-preview-shop .project-preview-grid span:nth-child(2),
+.project-preview-dashboard .project-preview-sidebar,
+.project-preview-portfolio .project-preview-line-strong {
+  background: rgba(92, 118, 109, 0.78);
+}
+
 .contact-card {
   display: grid;
   gap: 32px;
