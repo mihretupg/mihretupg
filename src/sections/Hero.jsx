@@ -15,7 +15,7 @@ function Hero() {
           </div>
           <h1 className="text-4xl font-bold leading-tight text-[#EDE9E6] sm:text-5xl lg:text-6xl">{personal.name}</h1>
           <p className="mt-5 text-xl font-semibold text-[#EDE9E6] lg:text-2xl">{personal.title}</p>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-[#EDE9E6]">{personal.summary}</p>
+          <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-[#EDE9E6]">{personal.summary}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a className="btn-primary" href={`mailto:${personal.email}`}>
               <Mail size={18} />
