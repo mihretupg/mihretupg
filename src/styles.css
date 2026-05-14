@@ -190,12 +190,20 @@ section {
 .contact-card {
   display: grid;
   gap: 32px;
+  color: #ffffff;
   border-radius: 8px;
   background:
     linear-gradient(135deg, rgba(201, 153, 107, 0.25), transparent 42%),
     var(--resume-ink);
   padding: clamp(24px, 5vw, 42px);
   box-shadow: 0 24px 60px rgba(92, 79, 74, 0.18);
+}
+
+.contact-card .btn-primary,
+.contact-card .btn-primary:hover,
+.contact-card .btn-secondary,
+.contact-card .btn-secondary:hover {
+  color: #ffffff;
 }
 
 .contact-link {

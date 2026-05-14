@@ -13,8 +13,8 @@ function Contact() {
     <Section id="contact" label="Contact" title="Available for remote support, web projects, and freelance work.">
       <div className="contact-card">
         <div>
-          <h3 className="text-3xl font-bold text-resume-paper">Let's work together</h3>
-          <p className="mt-4 max-w-xl leading-7 text-resume-line">
+          <h3 className="text-3xl font-bold text-white">Let's work together</h3>
+          <p className="mt-4 max-w-xl leading-7 text-white">
             Reach out for technical virtual assistance, frontend web development, Shopify support, or digital operations
             help.
           </p>
@@ -40,12 +40,12 @@ function Contact() {
                 target={item.label === "Location" ? "_blank" : undefined}
                 rel={item.label === "Location" ? "noreferrer" : undefined}
               >
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-resume-paper/10 text-[#5C766D]">
+                <span className="grid h-11 w-11 place-items-center rounded-lg bg-resume-paper/10 text-white">
                   <Icon size={20} />
                 </span>
                 <span>
-                  <span className="block text-sm text-resume-muted">{item.label}</span>
-                  <span className="font-semibold text-resume-paper">{item.value}</span>
+                  <span className="block text-sm text-white">{item.label}</span>
+                  <span className="font-semibold text-white">{item.value}</span>
                 </span>
               </a>
             );
