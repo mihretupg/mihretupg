@@ -5,7 +5,6 @@ import Contact from "./sections/Contact";
 import EducationTraining from "./sections/EducationTraining";
 import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
-import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
         <About />
         <Experience />
         <Skills />
-        <Projects />
         <EducationTraining />
         <Contact />
       </main>

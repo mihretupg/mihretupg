@@ -2,10 +2,6 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { navItems, personal } from "../data/portfolio";
 
-const displayNavItems = navItems.includes("Projects")
-  ? navItems
-  : navItems.flatMap((item) => (item === "Education" ? ["Projects", item] : [item]));
-
 function Header() {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
@@ -27,7 +23,7 @@ function Header() {
           {menuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
         <div className="hidden items-center gap-1 lg:flex">
-          {displayNavItems.map((item) => (
+          {navItems.map((item) => (
             <NavLink item={item} key={item} />
           ))}
         </div>
@@ -35,7 +31,7 @@ function Header() {
       {menuOpen && (
         <div className="border-t border-[#EDE9E6]/10 bg-[#5C4F4A] px-5 pb-5 lg:hidden">
           <div className="mx-auto grid max-w-7xl gap-1 pt-2">
-            {displayNavItems.map((item) => (
+            {navItems.map((item) => (
               <NavLink item={item} key={item} onClick={closeMenu} mobile />
             ))}
           </div>
