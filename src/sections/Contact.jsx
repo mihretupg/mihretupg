@@ -47,7 +47,7 @@ function Contact() {
               <label className="grid gap-2 text-sm font-semibold text-white">
                 Name
                 <input
-                  className="min-h-12 rounded-lg border border-white/20 bg-white/10 px-4 text-white outline-none transition placeholder:text-white/60 focus:border-[#C9996B] focus:bg-white/14"
+                  className="min-h-12 rounded-lg border border-white/20 bg-white/10 px-4 text-white outline-none transition placeholder:text-white/60 focus:border-[#C9996B] focus:bg-white/20"
                   name="name"
                   onChange={updateField}
                   placeholder="Your name"
@@ -59,7 +59,7 @@ function Contact() {
               <label className="grid gap-2 text-sm font-semibold text-white">
                 Email
                 <input
-                  className="min-h-12 rounded-lg border border-white/20 bg-white/10 px-4 text-white outline-none transition placeholder:text-white/60 focus:border-[#C9996B] focus:bg-white/14"
+                  className="min-h-12 rounded-lg border border-white/20 bg-white/10 px-4 text-white outline-none transition placeholder:text-white/60 focus:border-[#C9996B] focus:bg-white/20"
                   name="email"
                   onChange={updateField}
                   placeholder="you@example.com"
@@ -72,7 +72,7 @@ function Contact() {
             <label className="grid gap-2 text-sm font-semibold text-white">
               Message
               <textarea
-                className="min-h-28 rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white outline-none transition placeholder:text-white/60 focus:border-[#C9996B] focus:bg-white/14"
+                className="min-h-28 rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white outline-none transition placeholder:text-white/60 focus:border-[#C9996B] focus:bg-white/20"
                 name="message"
                 onChange={updateField}
                 placeholder="Tell me what kind of VA support you need"

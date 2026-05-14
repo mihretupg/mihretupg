@@ -70,7 +70,7 @@ function ExperienceCard({ job }) {
       </div>
       <ul className="mt-6 grid gap-3 md:grid-cols-2">
         {job.points.map((point) => (
-          <li className="flex gap-3 rounded-lg p-2 text-sm leading-6 text-resume-strong transition duration-200 hover:bg-[#5C766D]/8" key={point}>
+          <li className="flex gap-3 rounded-lg p-2 text-sm leading-6 text-resume-strong transition duration-200 hover:bg-[#5C766D]/10" key={point}>
             <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#5C766D]" />
             <span>{point}</span>
           </li>

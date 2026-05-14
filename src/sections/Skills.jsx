@@ -25,7 +25,7 @@ function Skills() {
               </div>
               <div className="mt-6 flex flex-wrap gap-2">
                 {group.items.map((skill) => (
-                  <span className="skill-pill transition duration-200 hover:-translate-y-0.5 hover:border-[#5C766D] hover:bg-[#5C766D]/12" key={skill}>
+                  <span className="skill-pill transition duration-200 hover:-translate-y-0.5 hover:border-[#5C766D] hover:bg-[#5C766D]/10" key={skill}>
                     {skill}
                   </span>
                 ))}
