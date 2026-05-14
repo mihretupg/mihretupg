@@ -5,7 +5,7 @@ function About() {
   return (
     <Section id="about" label="About" title="A technical assistant who can also build the website.">
       <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-        <div className="section-card bg-navy-900 text-white">
+        <div className="section-card bg-navy-900 text-resume-paper">
           <div className="about-photo-frame">
             <img className="about-photo" src="/mihretu-petros-photo.jpg" alt="Mihretu Petros" />
           </div>
