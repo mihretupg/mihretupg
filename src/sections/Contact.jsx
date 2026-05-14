@@ -14,7 +14,7 @@ function Contact() {
       <div className="contact-card">
         <div>
           <h3 className="text-3xl font-bold text-white">Let's work together</h3>
-          <p className="mt-4 max-w-xl leading-7 text-slate-300">
+          <p className="mt-4 max-w-xl leading-7 text-resume-line">
             Reach out for technical virtual assistance, frontend web development, Shopify support, or digital operations
             help.
           </p>
@@ -40,11 +40,11 @@ function Contact() {
                 target={item.label === "Location" ? "_blank" : undefined}
                 rel={item.label === "Location" ? "noreferrer" : undefined}
               >
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-white/10 text-blue-200">
+                <span className="grid h-11 w-11 place-items-center rounded-lg bg-white/10 text-accent-200">
                   <Icon size={20} />
                 </span>
                 <span>
-                  <span className="block text-sm text-slate-400">{item.label}</span>
+                  <span className="block text-sm text-resume-muted">{item.label}</span>
                   <span className="font-semibold text-white">{item.value}</span>
                 </span>
               </a>

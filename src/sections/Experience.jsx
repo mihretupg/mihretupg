@@ -17,11 +17,11 @@ function Experience() {
 function ExperienceCard({ job }) {
   return (
     <article className="section-card hover-card">
-      <div className="flex flex-col gap-4 border-b border-slate-200 pb-6 md:flex-row md:items-start md:justify-between">
+      <div className="flex flex-col gap-4 border-b border-resume-line pb-6 md:flex-row md:items-start md:justify-between">
         <div>
           <p className="text-sm font-semibold uppercase text-accent-600">{job.company}</p>
           <h3 className="mt-2 text-2xl font-bold text-navy-900">{job.role}</h3>
-          <div className="mt-3 flex flex-wrap gap-3 text-sm text-slate-600">
+          <div className="mt-3 flex flex-wrap gap-3 text-sm text-resume-body">
             <span className="inline-flex items-center gap-2">
               <MapPin size={16} />
               {job.location}
@@ -35,7 +35,7 @@ function ExperienceCard({ job }) {
       </div>
       <ul className="mt-6 grid gap-3 md:grid-cols-2">
         {job.points.map((point) => (
-          <li className="flex gap-3 text-sm leading-6 text-slate-700" key={point}>
+          <li className="flex gap-3 text-sm leading-6 text-resume-strong" key={point}>
             <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent-500" />
             <span>{point}</span>
           </li>
