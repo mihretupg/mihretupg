@@ -22,7 +22,7 @@ export const navItems = [
 export const experiences = [
   {
     role: "Virtual Assistant",
-    company: "Expressbrands",
+    company: "Express Brands",
     location: "Remote / New York-based company",
     dates: "Aug 2024 - May 2026",
     points: [
@@ -36,26 +36,42 @@ export const experiences = [
     ],
   },
   {
-    role: "Remote Operations & Website Support",
-    company: "Kelemarts",
+    role: "E-commerce & Website Support",
+    company: "Kelem Arts",
     location: "Remote",
     dates: "May 2023 - Apr 2024",
     points: [
-      "Maintained website content, product information, and business updates for remote teams",
-      "Supported digital operations by organizing tasks, tracking requests, and coordinating updates",
+      "Managed e-commerce orders, product updates, and online store information",
+      "Added new products with descriptions, images, pricing, and category details",
+      "Managed email communication and follow-up tasks for store operations",
+      "Maintained website content, product information, and business updates",
       "Collaborated remotely with team members on branding, marketing, and customer-facing content",
       "Prepared simple reports, organized files, and kept project information current",
       "Checked pages for accuracy, consistency, and user-friendly presentation",
       "Provided basic website troubleshooting and technical support when needed",
     ],
   },
+  {
+    role: "Website Developer & Content Manager",
+    company: "Abro Collective",
+    location: "Remote",
+    dates: "Sept 2023 - Feb 2024",
+    points: [
+      "Built the Abro Collective website for a group of six connected businesses",
+      "Managed website content, business pages, service information, and regular updates",
+      "Organized content across multiple business areas so visitors could understand each brand clearly",
+      "Collaborated remotely with team members on branding, marketing, and customer-facing website content",
+      "Checked pages for accuracy, consistency, links, and user-friendly presentation",
+      "Provided website maintenance, content support, and basic technical troubleshooting",
+    ],
+  },
 ];
 
 export const skillGroups = [
   {
-    title: "Administrative Support",
+    title: "Virtual Assistant Skills",
     icon: "tools",
-    items: ["Inbox Management", "Calendar Management", "Data Entry", "File Organization", "Research", "Reporting"],
+    items: ["Email Management", "Calendar Management", "Data Entry", "File Organization", "Research", "Reporting"],
   },
   {
     title: "E-commerce & CMS",
