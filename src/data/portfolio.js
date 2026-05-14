@@ -5,9 +5,9 @@ export const personal = {
   location: "Addis Ababa, Ethiopia",
   phone: "+251 910 497 908",
   email: "mihretupg@gmail.com",
-  title: "Technical Virtual Assistant | Frontend Web Developer | E-commerce Support Specialist",
+  title: "Virtual Assistant | E-commerce Support | Remote Administrative Support",
   summary:
-    "Detail-oriented Technical Virtual Assistant and Frontend Web Developer with experience supporting remote e-commerce operations, Shopify administration, digital marketing activities, customer communication, and frontend website development. Skilled in HTML, CSS, JavaScript, React, Tailwind CSS, Shopify, WordPress, SEO, and modern business collaboration tools.",
+    "Detail-oriented Virtual Assistant with remote experience supporting e-commerce operations, inbox management, customer communication, product listings, data entry, scheduling, digital coordination, and day-to-day administrative workflows. Reliable, organized, and comfortable using Shopify, WordPress, Google Workspace, Microsoft Office, Canva, Slack, Trello, Asana, and Mailchimp.",
 };
 
 export const navItems = [
@@ -22,41 +22,41 @@ export const navItems = [
 
 export const experiences = [
   {
-    role: "Technical Virtual Assistant",
+    role: "Virtual Assistant",
     company: "Expressbrands",
     location: "Remote / New York-based company",
     dates: "Aug 2024 - May 2026",
     points: [
       "Managed daily e-commerce operations and online store administration",
       "Updated Shopify product listings, inventory, pricing, and website content",
-      "Supported frontend website updates using HTML, CSS, JavaScript, and React",
-      "Assisted with SEO optimization and landing page creation",
+      "Handled product research, content updates, data entry, and order-related admin tasks",
+      "Assisted with SEO updates, landing page content, and basic website maintenance",
       "Managed professional email communication and customer support inquiries",
       "Coordinated email campaigns and social media support activities",
       "Maintained organized remote workflows, scheduling, and administrative tasks",
     ],
   },
   {
-    role: "Remote Full-Time Web Developer",
+    role: "Remote Operations & Website Support",
     company: "Kelemarts",
     location: "Remote",
     dates: "May 2023 - Apr 2024",
     points: [
-      "Designed, developed, and maintained responsive company websites",
-      "Updated website layouts, frontend components, and content",
-      "Collaborated remotely with team members on branding and marketing goals",
-      "Improved website performance using HTML, CSS, JavaScript, React, Tailwind CSS, and Bootstrap",
-      "Ensured consistent branding and user-friendly website experiences",
-      "Provided frontend troubleshooting and technical support",
+      "Maintained website content, product information, and business updates for remote teams",
+      "Supported digital operations by organizing tasks, tracking requests, and coordinating updates",
+      "Collaborated remotely with team members on branding, marketing, and customer-facing content",
+      "Prepared simple reports, organized files, and kept project information current",
+      "Checked pages for accuracy, consistency, and user-friendly presentation",
+      "Provided basic website troubleshooting and technical support when needed",
     ],
   },
 ];
 
 export const skillGroups = [
   {
-    title: "Frontend Development",
-    icon: "code",
-    items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Bootstrap", "Git", "GitHub"],
+    title: "Administrative Support",
+    icon: "tools",
+    items: ["Inbox Management", "Calendar Management", "Data Entry", "File Organization", "Research", "Reporting"],
   },
   {
     title: "E-commerce & CMS",
@@ -67,25 +67,26 @@ export const skillGroups = [
       "Product Listing",
       "Inventory Management",
       "Website Management",
-      "SEO Optimization",
-      "Landing Page Creation",
+      "Order Support",
+      "Content Updates",
+      "SEO Updates",
     ],
   },
   {
-    title: "Digital Marketing & Virtual Assistance",
+    title: "Customer & Marketing Support",
     icon: "monitor",
     items: [
       "Email Campaign Management",
       "Social Media Support",
       "Customer Support",
-      "Data Entry",
-      "Calendar Management",
-      "Administrative Support",
+      "Lead Tracking",
+      "Canva Designs",
+      "Online Community Support",
     ],
   },
   {
-    title: "Tools",
-    icon: "tools",
+    title: "Remote Tools",
+    icon: "code",
     items: [
       "Canva",
       "Google Workspace",
@@ -96,7 +97,7 @@ export const skillGroups = [
       "Asana",
       "Mailchimp",
       "Meta Ads Manager",
-      "Figma",
+      "Zoom",
     ],
   },
 ];
