@@ -16,7 +16,6 @@ export const navItems = [
   "Skills",
   "Education",
   "Training",
-  "Languages",
   "Contact",
 ];
 
