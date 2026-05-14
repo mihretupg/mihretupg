@@ -2,6 +2,30 @@ import { CalendarDays, MapPin } from "lucide-react";
 import Section from "../components/Section";
 import { experiences } from "../data/portfolio";
 
+const brandLogos = [
+  {
+    match: "express",
+    src: "/brand-logos/express.png",
+    alt: "Express logo",
+  },
+  {
+    match: "abro",
+    src: "/brand-logos/abrocollective.png",
+    alt: "Abro Collective logo",
+  },
+  {
+    match: "kelem",
+    src: "/brand-logos/kelem-shop.png",
+    alt: "Kelem Shop logo",
+  },
+];
+
+function getBrandLogo(company) {
+  const normalizedCompany = company.toLowerCase();
+
+  return brandLogos.find((logo) => normalizedCompany.includes(logo.match));
+}
+
 function Experience() {
   return (
     <Section id="experience" label="Experience" title="Hands-on virtual assistance for e-commerce and remote teams.">
@@ -15,12 +39,23 @@ function Experience() {
 }
 
 function ExperienceCard({ job }) {
+  const logo = getBrandLogo(job.company);
+
   return (
     <article className="section-card hover-card">
       <div className="flex flex-col gap-4 border-b border-resume-line pb-6 md:flex-row md:items-start md:justify-between">
-        <div>
-          <p className="text-sm font-semibold uppercase text-[#5C766D]">{job.company}</p>
-          <h3 className="mt-2 text-2xl font-bold text-navy-900">{job.role}</h3>
+        <div className="flex items-start gap-4">
+          {logo && (
+            <span className="brand-logo-frame">
+              <img className="brand-logo-image" src={logo.src} alt={logo.alt} />
+            </span>
+          )}
+          <div>
+            <p className="text-sm font-semibold uppercase text-[#5C766D]">{job.company}</p>
+            <h3 className="mt-2 text-2xl font-bold text-navy-900">{job.role}</h3>
+          </div>
+        </div>
+        <div className="md:text-right">
           <div className="mt-3 flex flex-wrap gap-3 text-sm text-resume-body">
             <span className="inline-flex items-center gap-2">
               <MapPin size={16} />
