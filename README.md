@@ -33,7 +33,7 @@ I bring practical experience across React, JavaScript, HTML, CSS, Tailwind CSS, 
 - Responsive Web Design
 - Component-Based UI Development
 - Website Maintenance
-- Basic SEO Implementation
+
 
 ### IT Project Coordination
 
@@ -58,93 +58,11 @@ I bring practical experience across React, JavaScript, HTML, CSS, Tailwind CSS, 
 - File and Data Organization
 - Reporting and Follow-Up
 
-### Tools
-
-- Git and GitHub
-- VS Code
-- Google Workspace
-- Microsoft Office
-- Slack
-- Trello
-- Asana
-- Mailchimp
-- Zoom
-- Canva
-
-## Featured Portfolio Website
-
-This repository contains my personal portfolio website, built to present my professional experience, technical skills, project coordination background, testimonials, education, training, and contact details.
-
-### Built With
-
-- React
-- Vite
-- Tailwind CSS
-- Lucide React
-- JavaScript
-
-### Website Sections
-
-- Hero and professional introduction
-- About section
-- Experience
-- Testimonials
-- Skills
-- Education and training
-- Contact information
-
-## Selected Experience
-
-### Website Developer and Content Manager
-
-Built and maintained website content for Abro Collective, supporting multiple connected business areas with organized pages, service information, content updates, link checks, and remote team collaboration.
-
-### E-commerce and Website Support
-
-Supported Kelem Arts with product updates, website content, order information, online store organization, reporting, and quality checks for customer-facing pages.
-
-### Virtual Assistant and E-commerce Operations
-
-Supported Express Brands with e-commerce operations, Shopify product listings, inventory updates, customer communication, email workflows, content updates, scheduling, and administrative coordination.
-
-## Education and Training
-
-- Bachelor's Degree in Electrical and Computer Engineering, Haramaya University
-- Virtual Assistant Program, ALX Africa
-
-## Project Setup
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Build for production:
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
-
-## Contact
-
 **Mihretu Petros**  
 Addis Ababa, Ethiopia  
 Email: [mihretupg@gmail.com](mailto:mihretupg@gmail.com)  
 GitHub: [github.com/mihretupg](https://github.com/mihretupg)
 
-## Portfolio Focus
+ 
 
 I am open to frontend development, IT project coordination, website management, and digital operations opportunities where I can contribute technical execution, organized delivery, and dependable communication.
