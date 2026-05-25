@@ -3,19 +3,18 @@ export const githubUrl = "https://github.com/mihretupg";
 export const personal = {
   name: "Mihretu Petros",
   location: "Addis Ababa, Ethiopia",
-  phone: "+251 910 497 908",
+  phone: "+251941268503",
   email: "mihretupg@gmail.com",
-  title: "Virtual Assistant | Executive Assistant | Administrative Assistant | E-commerce Support | Web Development",
+  title: "Virtual Assistant | Executive Assistant | Administrative Assistant | E-commerce Support | Frontend Web Dev",
   summary:
-    "Detail-oriented Virtual Assistant with remote experience supporting e-commerce operations, inbox management, customer communication, product listings, data entry, scheduling, digital coordination, and day-to-day administrative workflows. Reliable, organized, and comfortable using Shopify, WordPress, Google Workspace, Microsoft Office, Canva, Slack, Trello, Asana, and Mailchimp.",
+    "Detail-oriented Virtual Assistant with remote experience supporting e-commerce operations, inbox management, customer communication, product listings, data entry, scheduling, digital coordination, and day-to-day administrative workflows. Reliable, organized, and comfortable using Shopify, WordPress, Google Workspace, Microsoft Office, Slack, Trello, Asana, and Mailchimp.",
 };
 
 export const navItems = [
   "About",
   "Experience",
+  "Testimonials",
   "Skills",
-  "Education",
-  "Training",
   "Contact",
 ];
 
@@ -23,7 +22,7 @@ export const experiences = [
   {
     role: "Virtual Assistant",
     company: "Express Brands",
-    location: "Remote / New York-based company",
+    location: "Remote",
     dates: "Aug 2024 - May 2026",
     points: [
       "Managed daily e-commerce operations and online store administration",
@@ -71,7 +70,18 @@ export const skillGroups = [
   {
     title: "Virtual Assistant Skills",
     icon: "tools",
-    items: ["Email Management", "Calendar Management", "Data Entry", "File Organization", "Research", "Reporting"],
+    items: [
+      "Scheduling",
+      "Email Management",
+      "Customer Support",
+      "Project Coordination",
+      "Data Entry",
+      "Communication Support",
+      "Calendar Management",
+      "File Organization",
+      "Research",
+      "Reporting",
+    ],
   },
   {
     title: "E-commerce & CMS",
@@ -105,13 +115,12 @@ export const skillGroups = [
     ],
   },
   {
-    title: "Remote Tools",
+    title: "Tools",
     icon: "tools",
     items: [
-      "Canva",
+      
       "Google Workspace",
-      "Microsoft Office",
-      "Excel",
+      "Microsoft Office Tools",
       "Slack",
       "Trello",
       "Asana",
@@ -119,6 +128,30 @@ export const skillGroups = [
       "Meta Ads Manager",
       "Zoom",
     ],
+  },
+];
+
+export const testimonials = [
+  {
+    name: "Winta Teferi",
+    role: "Co-founder",
+    company: "Kelem Arts",
+    focus: "E-commerce and website support",
+    email: "winta.teferi@gmail.com",
+  },
+  {
+    name: "Tensae Mekonen",
+    role: "Co-founder",
+    company: "Abro Collective",
+    focus: "Website development and content coordination",
+    email: "mtensae@gmail.com",
+  },
+  {
+    name: "Tsegaye T",
+    role: "CEO",
+    company: "Express Brands",
+    focus: "Virtual assistant and e-commerce operations",
+    email: "thomastsegaye2@gmail.com",
   },
 ];
 
@@ -150,7 +183,7 @@ export const contactLinks = [
   {
     label: "Phone",
     value: personal.phone,
-    href: "tel:+251910497908",
+    href: "tel:+251941268503",
     icon: "phone",
   },
   {

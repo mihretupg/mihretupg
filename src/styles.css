@@ -33,9 +33,10 @@ section {
 }
 
 .hero-grid {
+  --grid-line-color: rgba(237, 233, 230, 0.12);
   background-image:
-    linear-gradient(rgba(237, 233, 230, 0.16) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(237, 233, 230, 0.16) 1px, transparent 1px);
+    linear-gradient(var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-color) 1px, transparent 1px);
   background-size: 42px 42px;
 }
 
@@ -111,58 +112,128 @@ section {
 .profile-visual {
   position: relative;
   display: grid;
-  aspect-ratio: 1;
-  place-items: center;
+  gap: 18px;
   overflow: hidden;
-  border-radius: 999px;
-  border: 4px solid #c9996b;
+  border-radius: 8px;
+  border: 1px solid rgba(237, 233, 230, 0.2);
   background:
-    linear-gradient(145deg, rgba(201, 153, 107, 0.24), rgba(92, 79, 74, 0.88)),
+    linear-gradient(135deg, rgba(201, 153, 107, 0.22), transparent 46%),
+    linear-gradient(145deg, rgba(237, 233, 230, 0.12), rgba(237, 233, 230, 0.04)),
     var(--resume-ink);
-  box-shadow:
-    0 0 0 10px rgba(237, 233, 230, 0.08),
-    0 0 0 18px rgba(92, 118, 109, 0.16),
-    0 26px 58px rgba(92, 79, 74, 0.36);
+  box-shadow: 0 22px 54px rgba(40, 32, 29, 0.28);
   isolation: isolate;
+  padding: 18px;
 }
 
-.profile-photo {
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.profile-visual::before,
-.profile-visual::after,
-.about-photo-frame::before,
-.about-photo-frame::after {
+.profile-visual::before {
   position: absolute;
-  z-index: 1;
-  display: block;
+  inset: 12px;
+  z-index: -1;
+  border: 1px solid rgba(237, 233, 230, 0.1);
+  border-radius: 8px;
   content: "";
   pointer-events: none;
 }
 
-.profile-visual::before,
-.about-photo-frame::before {
-  inset: 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(237, 233, 230, 0.42);
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  z-index: 2;
 }
 
-.profile-visual::after,
-.about-photo-frame::after {
-  right: 14%;
-  bottom: 8%;
-  height: 18px;
-  width: 18px;
+.hero-profile-photo {
+  display: grid;
+  width: 64px;
+  min-width: 64px;
+  aspect-ratio: 1;
   border-radius: 999px;
-  background: #5c766d;
-  box-shadow:
-    0 0 0 6px rgba(237, 233, 230, 0.18),
-    0 0 0 11px rgba(201, 153, 107, 0.24);
+  border: 2px solid var(--resume-accent);
+  object-fit: cover;
+  object-position: center 24%;
+}
+
+.profile-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 7px;
+  color: rgba(237, 233, 230, 0.78);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+.profile-status::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--resume-accent);
+  box-shadow: 0 0 0 4px rgba(201, 153, 107, 0.18);
+  content: "";
+}
+
+.profile-card-name {
+  margin: 0;
+  color: var(--resume-paper);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.profile-focus {
+  position: relative;
+  z-index: 2;
+  border-left: 3px solid var(--resume-accent);
+  padding-left: 14px;
+}
+
+.profile-focus p {
+  margin: 0;
+  color: var(--resume-paper);
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.profile-focus span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(237, 233, 230, 0.76);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.profile-checklist {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.profile-checklist span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(237, 233, 230, 0.16);
+  background: rgba(237, 233, 230, 0.08);
+  color: var(--resume-paper);
+  padding: 8px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profile-checklist span::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--resume-accent);
+  content: "";
 }
 
 .profile-panel > .grid {
@@ -170,8 +241,29 @@ section {
 }
 
 .section-wrap {
+  position: relative;
+  overflow: hidden;
   border-top: 1px solid rgba(201, 153, 107, 0.28);
+  background: var(--resume-paper);
+  isolation: isolate;
   padding: 88px 0;
+}
+
+.section-wrap::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(92, 79, 74, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(92, 79, 74, 0.05) 1px, transparent 1px);
+  background-size: 42px 42px;
+  content: "";
+  pointer-events: none;
+}
+
+.section-wrap > * {
+  position: relative;
+  z-index: 1;
 }
 
 .section-heading {
@@ -203,15 +295,6 @@ section {
   text-transform: uppercase;
 }
 
-.section-eyebrow::after {
-  display: block;
-  height: 2px;
-  width: 28px;
-  border-radius: 999px;
-  background: var(--resume-accent);
-  content: "";
-}
-
 .section-card {
   border: 1px solid var(--resume-line);
   border-left: 4px solid var(--resume-accent-strong);
@@ -221,28 +304,15 @@ section {
   box-shadow: 0 20px 45px rgba(92, 79, 74, 0.12);
 }
 
-.about-photo-frame {
-  position: relative;
-  aspect-ratio: 1;
-  max-width: 210px;
-  overflow: hidden;
-  border-radius: 999px;
-  border: 4px solid #c9996b;
-  background:
-    linear-gradient(145deg, rgba(201, 153, 107, 0.24), rgba(92, 79, 74, 0.66)),
-    rgba(237, 233, 230, 0.08);
-  box-shadow:
-    0 0 0 8px rgba(237, 233, 230, 0.08),
-    0 0 0 14px rgba(92, 118, 109, 0.16),
-    0 18px 42px rgba(92, 79, 74, 0.24);
-}
-
-.about-photo {
+.about-profile-photo {
   display: block;
-  height: 100%;
-  width: 100%;
+  width: 56px;
+  min-width: 56px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  border: 2px solid var(--resume-accent);
   object-fit: cover;
-  object-position: center;
+  object-position: center 24%;
 }
 
 .hover-card {
@@ -265,7 +335,37 @@ section {
   color: var(--resume-strong);
   padding: 8px 10px;
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+.testimonial-card {
+  min-height: 100%;
+}
+
+.testimonial-email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(92, 118, 109, 0.24);
+  border-radius: 8px;
+  background: rgba(92, 118, 109, 0.08);
+  color: var(--resume-accent-strong);
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.testimonial-email:hover {
+  border-color: var(--resume-accent);
+  background: rgba(201, 153, 107, 0.12);
+  color: var(--resume-accent);
+  transform: translateY(-2px);
 }
 
 .brand-logo-frame {
@@ -293,6 +393,10 @@ section {
     var(--resume-ink);
   padding: clamp(24px, 5vw, 42px);
   box-shadow: 0 24px 60px rgba(92, 79, 74, 0.18);
+}
+
+.contact-card.contact-card-solo {
+  grid-template-columns: 1fr;
 }
 
 .contact-card .btn-primary,
