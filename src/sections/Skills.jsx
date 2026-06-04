@@ -1,92 +1,99 @@
 import {
-  Atom,
-  Boxes,
-  Braces,
   CalendarDays,
-  Chrome,
+  CheckCircle2,
   ClipboardList,
-  Code2,
+  CreditCard,
   Database,
   FileBarChart,
   FilePenLine,
   FileSpreadsheet,
   FolderOpen,
-  Globe2,
   Headphones,
   Mail,
-  Megaphone,
-  MonitorCog,
-  PackageCheck,
-  Palette,
-  Search,
-  SearchCheck,
-  Send,
-  Share2,
-  ShoppingBag,
-  ShoppingCart,
-  Slack,
-  Tags,
-  Trello,
+  MessageSquareText,
+  Plane,
+  ReceiptText,
+  SendHorizontal,
+  ShieldCheck,
+  Target,
   Users,
-  Video,
   Wrench,
 } from "lucide-react";
 import Section from "../components/Section";
-import { skillGroups } from "../data/portfolio";
+import { serviceGroups } from "../data/portfolio";
 
 const skillIcons = {
-  code: Code2,
-  monitor: MonitorCog,
-  shop: ShoppingBag,
-  tools: Wrench,
+  admin: ClipboardList,
+  communication: MessageSquareText,
+  sales: Target,
+  customer: Headphones,
+  operations: ShieldCheck,
+  scheduling: CalendarDays,
+  data: Database,
+  billing: ReceiptText,
 };
 
 const itemIcons = {
-  "Email Management": Mail,
-  Scheduling: CalendarDays,
-  "Calendar Management": CalendarDays,
-  "Data Entry": Database,
-  "File Organization": FolderOpen,
-  Research: Search,
-  Reporting: FileBarChart,
-  "Project Coordination": ClipboardList,
-  "Communication Support": Users,
-  Shopify: ShoppingCart,
-  WordPress: Globe2,
-  "Product Listing": Tags,
-  "Inventory Management": Boxes,
-  "Website Management": MonitorCog,
-  "Order Support": PackageCheck,
-  "Content Updates": FilePenLine,
-  "SEO Updates": SearchCheck,
-  JavaScript: Braces,
-  React: Atom,
-  "Tailwind CSS": Palette,
-  HTML: Code2,
-  CSS: Palette,
-  "Responsive Websites": MonitorCog,
-  "Website Maintenance": Wrench,
-  "Email Campaign Management": Send,
-  "Social Media Support": Share2,
-  "Customer Support": Headphones,
-  "Lead Tracking": ClipboardList,
-  "Canva Designs": Palette,
-  "Online Community Support": Users,
-  "Google Workspace": Chrome,
-  "Microsoft Office Tools": FileSpreadsheet,
-  Slack,
-  Trello,
-  Asana: ClipboardList,
-  Mailchimp: Mail,
-  "Meta Ads Manager": Megaphone,
-  Zoom: Video,
+  "Calendar management": CalendarDays,
+  "Inbox and email organization": Mail,
+  "Appointment scheduling": CalendarDays,
+  "Data entry and file organization": FolderOpen,
+  "Document preparation": FilePenLine,
+  "General admin support": ClipboardList,
+  "Client follow-ups": SendHorizontal,
+  "Appointment confirmations": CheckCircle2,
+  "Reminder messages": MessageSquareText,
+  "Email and message responses": Mail,
+  "Inquiry management": Users,
+  "Professional client communication": MessageSquareText,
+  "Lead follow-up": Target,
+  "CRM updates": Database,
+  "Prospect tracking": ClipboardList,
+  "Quote and proposal follow-up": FileSpreadsheet,
+  "Sales appointment coordination": CalendarDays,
+  "Client pipeline organization": ClipboardList,
+  "Customer inquiries": Headphones,
+  "New client onboarding support": Users,
+  "Check-in messages": MessageSquareText,
+  "Support issue tracking": ClipboardList,
+  "Escalation support": ShieldCheck,
+  "Customer satisfaction follow-up": CheckCircle2,
+  "Task tracking": ClipboardList,
+  "SOP and process documentation": FilePenLine,
+  "Vendor coordination": Users,
+  "Workflow monitoring": ShieldCheck,
+  "Quality control checks": CheckCircle2,
+  "Project progress updates": FileBarChart,
+  "Meeting scheduling": CalendarDays,
+  "Booking confirmations": CheckCircle2,
+  "Schedule updates": CalendarDays,
+  "Travel coordination": Plane,
+  "Team coordination": Users,
+  "Last-minute change management": Wrench,
+  "Data entry": Database,
+  "Form organization": FileSpreadsheet,
+  "Document tracking": FilePenLine,
+  "File management": FolderOpen,
+  "Report preparation": FileBarChart,
+  "Record updates": Database,
+  "Invoice reminders": ReceiptText,
+  "Payment follow-up": CreditCard,
+  "Billing communication": Mail,
+  "Quote tracking": FileSpreadsheet,
+  "Client balance reminders": CreditCard,
+  "Payment status updates": CheckCircle2,
 };
 
 function Skills() {
   return (
-    <Section id="skills" label="Skills" title="Tools & Platforms" titleClassName="font-light">
+    <Section
+      id="services"
+      label="Virtual Assistant Services"
+      title="Professional support for organized, responsive business operations."
+      titleClassName="font-light"
+    >
       <div className="grid gap-5 sm:gap-6 md:grid-cols-2">
-        {skillGroups.map((group) => {
+        {serviceGroups.map((group) => {
           const Icon = skillIcons[group.icon];
           return (
             <article className="section-card hover-card group" key={group.title}>
@@ -96,6 +103,7 @@ function Skills() {
                 </span>
                 <h3 className="text-xl font-bold leading-tight text-navy-900">{group.title}</h3>
               </div>
+              <p className="mt-4 text-base leading-7 text-resume-body">{group.description}</p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {group.items.map((skill) => {
                   const ItemIcon = itemIcons[skill] ?? Wrench;

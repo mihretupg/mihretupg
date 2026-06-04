@@ -19,7 +19,7 @@ function Header() {
 
     scrollToCurrentPath();
     window.addEventListener("popstate", scrollToCurrentPath);
-
+ 
     return () => window.removeEventListener("popstate", scrollToCurrentPath);
   }, []);
 
@@ -27,7 +27,7 @@ function Header() {
     <header className="fixed left-0 right-0 top-0 z-50 bg-[#5C4F4A]/95 backdrop-blur">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="/" className="text-sm font-semibold text-[#EDE9E6] sm:text-base" onClick={goHome} aria-label={personal.name}>
-          Mihretu Petros, VA
+          Mihretu Gonche, VA
         </a>
         <button
           type="button"
